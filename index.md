@@ -6,7 +6,7 @@ title: Rohail Taimour
 <img style="float:right" src="data/closeup-Photo.jpeg">
 
 # Rohail Taimour
-Contract Data Scientist | Statistician | Python/R for AI/Machine Learning   
+Python Developer | Statistician | Data Science | AI/Machine Learning   
 1040, Brussels, Belgium
 
 <div id="webaddress">
@@ -17,7 +17,7 @@ rohail.taimour@gmail.com | +32 489 83 64 76
 
 ## Summary
 
-Experienced data scientist with an expertise in working on data products that have a machine learning focus. I am able to play a dynamic role between data scientist/machine learning engineer and data engineer given the needs of the project. I am passionate about adopting development best practices wherever possible and am comfortable working in an ambiguous and fast changing environment, laser focused on delivering user requirements in an agile manner.
+Experienced python developer with an expertise in working on data products, especially those that have a machine learning/AI focus. I am well versed in the different phases of an AI project, from extracting data from source systems, to designing and implementing ETL processes and training machine learning models. I have developed numerous python packages and adopt software best practices to the extent possible. I am comfortable working in an ambiguous and fast changing environment, laser focused on delivering user requirements in an agile manner. 
 
 ## Education
 
