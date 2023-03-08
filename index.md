@@ -6,7 +6,7 @@ title: Rohail Taimour
 <img style="float:right" src="data/closeup-Photo.jpeg">
 
 # Rohail Taimour
-Contract Data Scientist | Statistician | Python/R for AI/Machine Learning   
+Statistician | Bayes enthusiast | Data Scientist | Python/R for AI/Machine Learning   
 1040, Brussels, Belgium
 
 <div id="webaddress">
@@ -17,7 +17,7 @@ rohail.taimour@gmail.com | +32 489 83 64 76
 
 ## Summary
 
-Experienced data scientist with an expertise in working on data products that have a machine learning focus. I am able to play a dynamic role between data scientist/machine learning engineer and data engineer given the needs of the project. I am passionate about adopting development best practices wherever possible and am comfortable working in an ambiguous and fast changing environment, laser focused on delivering user requirements in an agile manner.
+Experienced data scientist with experience working in a big data environment using pyspark and linux tools. I am able to play a dynamic role between data scientist/machine learning engineer and data engineer given the needs of the project. I am passionate about adopting development best practices wherever possible and am comfortable working in an ambiguous and fast changing environment, laser focused on delivering user requirements in an agile manner. I am particularly eager to have the opportunity to apply probabilistic programming, bayesian statistics methods and markov chain monte carlo simulation (MCMC) models as part of this role. 
 
 ## Education
 
@@ -65,9 +65,9 @@ Experienced data scientist with an expertise in working on data products that ha
   <tr>
     <td>
       <ul>
-        <li>Preferred python packages: pandas, pymc3, kedro, scikit-learn, sktime, seaborn</li>
+        <li>Preferred Python packages: pandas, pymc3, kedro, scikit-learn, sktime, seaborn</li>
         <li>OS: Windows, MacOS, Linux (Redhat/Ubuntu)</li>
-        <li>IDE: Pycharm, VScode, Rstudio, jupyter notebooks, Azure data bricks, Docker containers</li>
+        <li>Pycharm, VScode, Rstudio, jupyter notebooks, Azure data bricks, Docker containers</li>
         <li>code quality: black, pre-commit, isort, typing</li>
         <li>git flow branching for collaboration using git</li>
         <li>AWS s3/Azure blob for project related data exchange</li>
@@ -78,10 +78,10 @@ Experienced data scientist with an expertise in working on data products that ha
     </td>
     <td>
       <ul>
+        <li>Probabilistic programming, Monte Carlo simulation, Bayesian statistics using pymc3</li>
         <li>Regression, classification, clustering using classical statistical methods</li>
         <li>Machine learning approaches (tree-based methods such as XGboost, Random Forest etc) on tabular data</li>
         <li>Time series forecasting, clustering, aggregation using bary centers</li>
-        <li>Probabilistic programming, Monte Carlo simulation and Bayesian statistics</li>
         <li>Natural language processing (NLP) text embeddings, Named entity Recognition (NER), sentiment/topic analysis</li>
       </ul>
     </td>
@@ -105,6 +105,7 @@ Experienced data scientist with an expertise in working on data products that ha
       <ul>
         <li><strong>Python</strong>: 'Software engineering for Data scientists' (2019) from Ian Ozsvald (PyData London)</li>
         <li><strong>R</strong>: 'Advanced R Programming' (2014) from Belgian Open Source Analytical Consultants (BNOSAC)</li>
+        <li>Introductory Course offered by Intuitive Bayes (PyMC Labs) - Ravin Kumar, Thomas Wiecki, Alex Andorra</li>
       </ul>
     </td>
   </tr>
@@ -172,7 +173,8 @@ IT Artificial Intelligence (ITAI) is a global and cross functional team working 
         <li>Deliver biweekly sprint review update on deliverables status</li>
         <li>Analyze time series data collected from equipment sensors and visually summarize golden batch insights</li>
         <li>Performed a thorough model validation and hyperparameter tuning exercise before recommending model insights be tested in a live production environment</li>
-        <li>Created (bayesian) and tree-based regression models to quantify impact of process changes and predict batch performance</li>
+        <li>Created hierarchical bayesian regression model using brms to quantify uncertainty in regression parameter estimates while accounting for hierarchical structure of data</li>
+        <li>Created tree-based regression models to quantify impact of process changes and predict batch performance</li>
         <li>Supporting the mentoring and training of junior data science profiles on the project</li>
       </ul>
     </li>
