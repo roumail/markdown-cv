@@ -1,317 +1,662 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <title> Rohail Taimour</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
+  <title>Rohail Taimour</title>
+  <style type="text/css">
+    h1,h2,h3,h4,body,p,a, table, td,tr {
+  font-family: Avenir,Verdana,sans-serif;
+	padding: 0;
+	border: 0;
+  margin: 5;
+}
 
+body,td,tr {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+}
+
+h1 {
+  text-align: left;
+	font-size: 3em;
+	line-height: 1em;
+	position: relative;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #bc412b;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #c3513d;
+}
+
+a {
+	color: inherit;
+	/*text-decoration:none*/
+}
+
+a:hover {
+	color:#39f
+}
+
+#webaddress {
+  margin-top: 1em;
+	color: #bc412b;
+	font-family: Monaco,Menlo,monospace,sans-serif;
+	font-size: 100%;
+}
+
+.sidebar-edu-entry {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.sidebar-edu-entry strong {
+  font-size: 16px;
+}
+
+.sidebar-edu-comments {
+  font-size: 12px;
+  list-style: none; /* Removes the bullet */
+  padding-left: 0;  /* Reduces the gap on the left */
+  margin-top: 5px;  /* Optional: Adds some space above the list */
+}
+
+.table-without-border {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table-row {
+  display: table-row;
+}
+
+.table-cell {
+  display: table-cell;
+  border: none;
+}
+
+.table-cell:first-child {
+  width: 80%;
+  text-align: left;
+  font-weight: bold;
+}
+
+.table-cell:last-child {
+  width: 20%;
+  text-align: right;
+}
+
+/*Entries for CV title and bullets*/
+.cv-entry {
+  margin-bottom: 5px;
+}
+
+.cv-entry h3,
+.cv-entry h4 {
+  margin-bottom: 5px;
+}
+
+.cv-entry ul {
+  margin-bottom: 0px;
+  margin-left: 1.5em;
+  padding-left: 0;
+}
+
+.project-details {
+  margin-left: 5px;
+  padding-left: 0
+}
+
+/*Entries for skills section */
+table {
+  margin-left:auto; 
+  margin-right:auto;
+}
+
+td {
+  vertical-align: top;
+}
+
+.cv-container {
+  display: table;
+  width: 100%;
+}
+
+.sidebar, .main-content {
+  display: table-cell;
+}
+
+.sidebar {
+  width: 25%; /* This means that this item will take up 25% of the parent container */
+  background-color: #f4f4f4;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.main-content {
+  width: 75%; 
+}
+
+/* Competency list */
+.competency-list {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.competency-item {
+  margin-bottom: 10px;
+}
+
+.competency-key {
+  font-weight: bold;
+  text-align: right;
+  padding-right: 10px;
+  width: 40%;
+}
+
+.competency-value {
+  text-align: left;
+  width: 60%;
+}
+
+/* Usage: <div class="page-break"></div> */
+.page-break {
+  page-break-after: always;
+}
+  </style>
+</head>
 <body>
-  <div class="cv-container">
     <div class="sidebar">
-      <p style="margin: 0; font-weight: bold; font-size: 18px; color: #bc412b;">
-        Python/R Software Engineer | Contract Data Scientist | Statistician | AI/Machine Learning Specialist
-      </p>
-      <p style="margin: 0;">1040, Brussels, Belgium</p>
-      <p style="margin: 0;">
-        rohail.taimour@gmail.com | +32 489 83 64 76 |
-        <a href="https://www.rohailtaimour.com">Personal website</a> |
-        <a href="https://www.linkedin.com/in/rohailtaimour/">Linkedin</a> |
-        <a href="https://github.com/roumail">Github</a>
-      </p>
-      <h2> Education</h2>
-      <div class="sidebar-edu-entry">
-        <strong>MSc in Statistics</strong> - <span>KU Leuven, Leuven, Belgium</span> <span>(2014-2016)</span>
-        <ul class="sidebar-edu-comments">
-          <li>Cum Laude Graduation, Master’s thesis on continuous optimization of production processes in
-            <strong>MATLAB</strong>
-          </li>
-        </ul>
-      </div>
-      <div class="sidebar-edu-entry">
-        <strong>BSc (Hons.) in Accounting and Finance</strong> - <span>Lahore University of Management Sciences (LUMS),
-          Lahore, Pakistan</span> <span>(2010-2014)</span>
-        <ul class="sidebar-edu-comments">
-          <li>Graduated with Distinction (3.6/4.0)</li>
-        </ul>
-      </div>
-      <h2>Technical competencies</h2>
-      <table class="competency-list">
-        <tr class="competency-item">
-          <td class="competency-key">Programming:</td>
-          <td class="competency-value">Python and R (5+ years each)</td>
-        </tr>
-        <tr class="competency-item">
-          <td class="competency-key">OS:</td>
-          <td class="competency-value">Windows, MacOS, Linux (Redhat/Ubuntu)</td>
-        </tr>
-        <tr class="competency-item">
-          <td class="competency-key">IDE:</td>
-          <td class="competency-value">Pycharm, VScode, Rstudio, jupyter notebooks, Azure databricks</td>
-        </tr>
-        <tr class="competency-item">
-          <td class="competency-key">Devops:</td>
-          <td class="competency-value">Docker, Git, GitHub Actions/Azure Pipelines/Gitlab Pipelines, GitHub CLI tool for
-            release
-            management</td>
-        </tr>
-        <tr class="competency-item">
-          <td class="competency-key">Cloud platforms:</td>
-          <td class="competency-value">AWS S3, ECS, EKS, Fargate, Eventbridge, ECR</td>
-        </tr>
-        <tr class="competency-item">
-          <td class="competency-key">Databases:</td>
-          <td class="competency-value">Postgresql, SQLite3, Neo4j, sqlalchemy</td>
-        </tr>
-        <tr class="competency-item">
-          <td class="competency-key">Documentation:</td>
-          <td class="competency-value">Pandoc, Markdown, sphinx</td>
-        </tr>
-      </table>
-      <div class="page-break"></div>
-      <h2>Personal details</h2>
-      <ul>
-        <li><strong>Nationality:</strong> Belgian, Pakistani</li>
-        <li><strong>Languages:</strong> English (fluent/bilingual), Urdu (Native), French (B1)</li>
-        <li><strong>Mobility:</strong> Driving Licence available, flexible for hybrid setup with up to 4 days on site
-        </li>
-        <li><strong>Availability:</strong> Immediately</li>
-        <li><strong>Hobbies:</strong> Drumming and percussion instruments, Bouldering/Climbing, productivity, Squash,
-          reading</li>
-      </ul>
+        <p style="margin: 0; font-weight: bold; font-size: 18px; color: #bc412b;">
+   Python/R Software Engineer | Contract Data Scientist | Statistician | AI/Machine Learning Specialist
+</p>
+<p style="margin: 0;">1040, Brussels, Belgium</p>
+<p style="margin: 0;">
+  rohail.taimour@gmail.com | +32 489 83 64 76 |
+  <a href="https://www.rohailtaimour.com">Personal website</a> |
+  <a href="https://www.linkedin.com/in/rohailtaimour/">Linkedin</a> |
+  <a href="https://github.com/roumail">Github</a>
+</p>
+        <h2>Education</h2>
+
+  <div class="sidebar-edu-entry">
+    <strong>MSc in Statistics</strong> - <span>KU Leuven, Leuven, Belgium</span> - <span>2014-2016</span>
+    <ul class="sidebar-edu-comments">
+      
+        <li>Graduated Cum Laude, Master’s thesis on continuous optimization of production processes in MATLAB</li> 
+      
+    </ul>
+  </div>
+
+  <div class="sidebar-edu-entry">
+    <strong>BSc (Hons.) in Accounting and Finance</strong> - <span>Lahore University of Management Sciences (LUMS), Lahore, Pakistan</span> - <span>2010-2014</span>
+    <ul class="sidebar-edu-comments">
+      
+        <li>Graduated with Distinction (3.6/4.0)</li> 
+      
+        <li>Courses: Operations Research, Supply Chain, Decision analysis, Applied Probability</li> 
+      
+        <li>Treasurer for University Adventure Society organizing hiking trips for groups of upto 300 people in North of Pakistan</li> 
+      
+    </ul>
+  </div>
+
+        <h2>Technical competencies</h2>
+<table class="competency-list">
+  
+    <tr class="competency-item">
+      <td class="competency-key">Programming Languages:</td>
+      <td class="competency-value">
+        Expert in Python and R with 7+ years of experience
+      </td>
+    </tr>
+  
+    <tr class="competency-item">
+      <td class="competency-key">Operating Systems:</td>
+      <td class="competency-value">
+        Proficient with Windows, MacOS, Linux (Redhat/Ubuntu)
+      </td>
+    </tr>
+  
+    <tr class="competency-item">
+      <td class="competency-key">Development Environments:</td>
+      <td class="competency-value">
+        Pycharm, VScode, Rstudio, Jupyter Notebooks, Azure Databricks
+      </td>
+    </tr>
+  
+    <tr class="competency-item">
+      <td class="competency-key">CI/CD:</td>
+      <td class="competency-value">
+        Git, GitHub Actions, Azure Pipelines, GitLab Pipelines, GitHub CLI
+      </td>
+    </tr>
+  
+    <tr class="competency-item">
+      <td class="competency-key">Containerization:</td>
+      <td class="competency-value">
+        DockerHub, Docker
+      </td>
+    </tr>
+  
+    <tr class="competency-item">
+      <td class="competency-key">Cloud Services:</td>
+      <td class="competency-value">
+        AWS (S3, ECS), Azure (Blob, Databricks, Pipelines)
+      </td>
+    </tr>
+  
+    <tr class="competency-item">
+      <td class="competency-key">Database Management:</td>
+      <td class="competency-value">
+        PostgreSQL, SQLite3, Neo4j with expertise in SQLAlchemy
+      </td>
+    </tr>
+  
+    <tr class="competency-item">
+      <td class="competency-key">Technical Documentation:</td>
+      <td class="competency-value">
+        Pandoc, Markdown, Sphinx for documentation; proficient in CSS, HTML for web development
+      </td>
+    </tr>
+  
+    <tr class="competency-item">
+      <td class="competency-key">Data Science:</td>
+      <td class="competency-value">
+        Pandas, PyMC3, Scikit-Learn, sktime, Seaborn
+      </td>
+    </tr>
+  
+    <tr class="competency-item">
+      <td class="competency-key">Data Engineering:</td>
+      <td class="competency-value">
+        Kedro, prefect, PySpark
+      </td>
+    </tr>
+  
+    <tr class="competency-item">
+      <td class="competency-key">Software Testing:</td>
+      <td class="competency-value">
+        Pytest for testing; Black, Pre-Commit, iSort, Flake8, Mypy for code quality
+      </td>
+    </tr>
+  
+    <tr class="competency-item">
+      <td class="competency-key">Package Management:</td>
+      <td class="competency-value">
+        Conda, Mamba, Pip, Poetry for Python package and environment management
+      </td>
+    </tr>
+  
+    <tr class="competency-item">
+      <td class="competency-key">Machine Learning Operations (MLOPs):</td>
+      <td class="competency-value">
+        MLflow for artifact management and model versioning
+      </td>
+    </tr>
+  
+</table>
+        <h2>Personal details</h2>
+  <ul>
+    
+      <li>Nationality: Belgian, Pakistani</li>
+    
+      <li>Languages: English (fluent/bilingual), Urdu (Native), French (B1)</li>
+    
+      <li>Mobility: Driving License available, flexible for hybrid setup with up to 4 days on site</li>
+    
+      <li>Availability: Immediately</li>
+    
+      <li>Hobbies: Drumming and percussion instruments, Bouldering/Climbing, productivity, Squash, reading</li>
+    
+  </ul>
     </div>
     <div class="main-content">
-      <h1> Rohail Taimour </h1>
-      <h2> Summary </h2>
-      Experienced data scientist with an expertise in working on data products that have a machine learning focus. I am
-      able to play a dynamic role between data scientist/machine learning engineer and data engineer given the needs of
-      the project. I am passionate about adopting development best practices wherever possible and am comfortable
-      working in an ambiguous and fast changing environment, laser focused on delivering user requirements in an agile
-      manner.
-      <h2> Freelance projects (Oct 2022-present) </h2>
-      <div class="cv-entry">
-        <h3 class="project-title">Automated SQL Script Generation for Cross-Platform Data Migration</h3>
-        <div class="table-without-border">
-          <div class="table-row">
+        <h1>Rohail Taimour</h1e>
+        
+            <h2>Summary</h2>
+<p>As a seasoned Python/R Software Engineer and Data Scientist with a Master's degree in Statistics, I specialize in creating robust data products with a focus on machine learning. My dynamic skill set bridges the gap between data science, machine learning engineering, and data engineering, allowing me to thrive in fast-paced, ambiguous environments. I am passionate about enhancing project efficiency and impact through best practices and agile methodologies.</p>
+        
+        
+            
+<h2>Freelance projects (Oct 2022-present)</h2>
+
+  <div class="cv-entry">
+    <h3 class="project-title">
+      
+        Automated SQL Script Generation for Cross-Platform Data Migration
+      
+    </h3>
+    
+      <div class="table-without-border">
+        <div class="table-row">
+          
             <div class="table-cell">
               <p>Python Software Engineer, Illumina, Mechelen, Belgium</p>
             </div>
+          
+          
             <div class="table-cell">
               <p>July-Aug 2023</p>
             </div>
-          </div>
+          
         </div>
-        <ul class="project-details">
-          <li>Designed and implemented an ORM Mapper for dynamic ingestion of various file formats, automating the SQL
-            script generation process for data migration.</li>
-          <li>Implemented the solution as a Python package encapsulating the entire data migration logic within a Docker
-            entrypoint for portability and ease of deployment.</li>
-          <li>Conducted comprehensive testing of generated SQL scripts using mock PostgreSQL database tables, ensuring
-            script accuracy and reliability.</li>
-          <li>Parameterized key inputs allowing for seamless deployment across multiple environments (Development,
-            Integration, Production).</li>
-        </ul>
       </div>
-      <div class="cv-entry">
-        <h3 class="project-title">Configurable Bioinformatics Pipeline for Event-Triggered Secondary Analysis of
-          Sequencing Data Using Python and Docker</h3>
-        <div class="table-without-border">
-          <div class="table-row">
+    
+    <ul class="project-details">
+      
+        <li>Designed and implemented an ORM Mapper for dynamic ingestion of various file formats, automating the SQL script generation process for data migration.</li>
+      
+        <li>Implemented the solution as a Python package encapsulating the entire data migration logic within a Docker entrypoint for portability and ease of deployment.</li>
+      
+        <li>Conducted comprehensive testing of generated SQL scripts using mock PostgreSQL database tables, ensuring script accuracy and reliability.</li>
+      
+        <li>Parameterized key inputs allowing for seamless deployment across multiple environments (Development, Integration, Production).</li>
+      
+    </ul>
+  </div>
+
+  <div class="cv-entry">
+    <h3 class="project-title">
+      
+        Configurable Bioinformatics Pipeline for Event-Triggered Secondary Analysis of Sequencing Data Using Python and Docker
+      
+    </h3>
+    
+      <div class="table-without-border">
+        <div class="table-row">
+          
             <div class="table-cell">
               <p>Python Software Engineer and Data Pipeline Architect, Illumina, Mechelen, Belgium</p>
             </div>
+          
+          
             <div class="table-cell">
-              <p>April 2023 - Present</p>
+              <p>April 2023 - October 2023</p>
             </div>
-          </div>
+          
         </div>
-        <ul class="project-details">
-          <li> Developed a configurable multi-stage pipeline for secondary analysis, implemented in Python and deployed
-            as a Docker entrypoint.</li>
-          <li> Designed and implemented an event-driven system that actively monitored for new sequencing data,
-            triggering corresponding analyses upon detection of state changes, thereby ensuring timely and efficient
-            processing of data.</li>
-          <li> Implemented unit testing using pytest and implemented fail-safe mechanisms for robust error handling.
-          </li>
-          <li> Optimized pipeline performance by implementing an SQLite database for tracking previously launched
-            analyses, enabling the pipeline to function as a daemon with persistent memory.</li>
-          <li> Provided guidance on automation strategies, leveraging CLI tools and API calls to enhance
-            interoperability between Illumina platforms ICA and Basespace.</li>
-        </ul>
       </div>
-      <div class="cv-entry">
-        <h3 class="project-title">Design and implement information retrieval methods using Natural language processing
-          (NLP)</h3>
-        <div class="table-without-border">
-          <div class="table-row">
+    
+    <ul class="project-details">
+      
+        <li>Developed a configurable multi-stage pipeline for secondary analysis, implemented in Python and deployed as a Docker entrypoint.</li>
+      
+        <li>Designed and implemented an event-driven system that actively monitored for new sequencing data, triggering corresponding analyses upon detection of state changes, thereby ensuring timely and efficient processing of data.</li>
+      
+        <li>Implemented unit testing using pytest and implemented fail-safe mechanisms for robust error handling.</li>
+      
+        <li>Optimized pipeline performance by implementing an SQLite database for tracking previously launched analyses, enabling the pipeline to function as a daemon with persistent memory.</li>
+      
+        <li>Provided guidance on automation strategies, leveraging CLI tools and API calls to enhance interoperability between Illumina platforms ICA and Basespace.</li>
+      
+    </ul>
+  </div>
+
+  <div class="cv-entry">
+    <h3 class="project-title">
+      
+        Design and implement information retrieval methods using Natural language processing (NLP)
+      
+    </h3>
+    
+      <div class="table-without-border">
+        <div class="table-row">
+          
             <div class="table-cell">
               <p>Machine Learning Engineer, IT Supply Quality, GSK Belgium</p>
             </div>
+          
+          
             <div class="table-cell">
               <p>Oct 2022‑Feb 2023</p>
             </div>
-          </div>
+          
         </div>
-        <ul class="project-details">
-          <li>Improved performance of information retrieval by 20% on unseen test data using a custom named entity
-            recognition (NER) from Spacy </li>
-          <li>Performed POC’s on improve model performance using rule based techniques as well as NER and annotated data
-            to train custom NER</li>
-          <li>Added text preprocessing features to the NLP pipeline such as spacy tokenization, Part of speech (POS)
-            tagging, better handling of non‑english emails, breaking emails into sentences, etc</li>
-        </ul>
       </div>
-      <div class="page-break"></div>
-      <h2> Data science projects at IT AI team, UCB Pharmaceutical (2016‑Oct 2022) </h2>
-      <div class="cv-entry">
-        <h3 class="project-title">Yield optimization for batch and continuous production processes using Machine
-          Learning in Python</h3>
-        <div class="table-without-border">
-          <div class="table-row">
+    
+    <ul class="project-details">
+      
+        <li>Improved performance of information retrieval by 20% on unseen test data using a custom named entity recognition (NER) from Spacy.</li>
+      
+        <li>Performed POC’s on Azure DataBricks environment to improve model performance using rule-based techniques as well as NER and annotated data to train custom NER.</li>
+      
+        <li>Added text preprocessing features to the NLP pipeline such as spacy tokenization, Part of speech (POS) tagging, better handling of non‑english emails, breaking emails into sentences, etc.</li>
+      
+    </ul>
+  </div>
+
+        
+        
+            
+<h2>Data science projects at IT AI team, UCB Pharmaceutical (2016‑Oct 2022)</h2>
+
+  <div class="cv-entry">
+    <h3 class="project-title">
+      
+        Yield optimization for batch and continuous production processes using Machine Learning in Python
+      
+    </h3>
+    
+      <div class="table-without-border">
+        <div class="table-row">
+          
             <div class="table-cell">
               <p>Lead Data Scientist, Supply and Manufacturing, UCB Switzerland/Belgium</p>
             </div>
+          
+          
             <div class="table-cell">
               <p>Aug 2020‑Oct 2022</p>
             </div>
-          </div>
+          
         </div>
-        <ul class="project-details">
-          <li> Production setting proposed by model directly led to an increased throughput of 20%, turning in a
-            recurring 1.5 million euro in annual cost savings</li>
-          <li>Analyze time series data collected from equipment sensors and visually summarize golden batch insights
-          </li>
-          <li>Created (bayesian) and tree-based regression models to quantify impact of process changes and predict
-            batch performance</li>
-          <li>Performed a thorough model validation and hyperparameter tuning exercise before recommending model
-            insights be tested in a live production environment</li>
-          <li>Supported delivery of workshops demystifying the process of conducting AI projects and machine learning to
-            process experts</li>
-        </ul>
       </div>
-      <div class="cv-entry">
-        <h3 class="project-title">Optimizing Resource Efficiency and Customer Engagement through Channel-Specific
-          Promotional Responsiveness
-        </h3>
-        <div class="table-without-border">
-          <div class="table-row">
+    
+    <ul class="project-details">
+      
+        <li>Production setting proposed by model directly led to an increased throughput of 20%, turning in a recurring 1.5 million euro in annual cost savings</li>
+      
+        <li>Analyze time series data collected from equipment sensors and visually summarize golden batch insights</li>
+      
+        <li>Created (Bayesian) and tree-based regression models to quantify impact of process changes and predict batch performance</li>
+      
+        <li>Performed a thorough model validation and hyperparameter tuning exercise before recommending model insights be tested in a live production environment</li>
+      
+        <li>Supported delivery of workshops demystifying the process of conducting AI projects and machine learning to process experts</li>
+      
+    </ul>
+  </div>
+
+  <div class="cv-entry">
+    <h3 class="project-title">
+      
+        Customer Promotional Responsiveness modeling by marketing channel
+      
+    </h3>
+    
+      <div class="table-without-border">
+        <div class="table-row">
+          
             <div class="table-cell">
-              <p>AI/ML engineer, Lead Data Scientist, Go to Market/Commerical EU5, US and Japan, UCB</p>
+              <p>AI/ML engineer, Lead Data Scientist, Go to Market/Commercial EU5, US and Japan, UCB</p>
             </div>
+          
+          
             <div class="table-cell">
               <p>June 2019‑June 2021</p>
             </div>
-          </div>
+          
         </div>
-        <ul class="project-details">
-          <li>Developed a Python package that abstracts the complexities of the data science workflow, enabling
-            configurable deployments across diverse scenarios such as different countries and disease areas.</li>
-          <li>Enhanced the package to seamlessly wrap over scikit-learn, thereby simplifying key data science tasks from
-            preprocessing to model training and tuning.</li>
-          <li>Incorporated MLflow into the package for robust artifact management, allowing for the tracking of model
-            versions, data inputs, and predictions.</li>
-          <li>Created customer segmentation models and proposed optimal resource allocation based on customer
-            responsiveness to different marketing channels.</li>
-          <li>Investigated adaptations to data science methodology for country/product specificities for maximum
-            reusability. Delivered as many as ten different use cases as lead data scientist for different products and
-            countries</li>
-          <li>Supported data engineers in the creation of features using pyspark and validated ingested data using data
-            visualization methods and discussions with subject matter experts</li>
-        </ul>
       </div>
-      <div class="cv-entry">
-        <h3 class="project-title">Scientific influencer (KOLs) identification, ranking and profiling using network
-          analytics and Neo4j</h3>
-        <div class="table-without-border">
-          <div class="table-row">
+    
+    <ul class="project-details">
+      
+        <li>Developed a Python package that abstracts the complexities of the data science workflow, enabling configurable deployments across diverse scenarios such as different countries and disease areas</li>
+      
+        <li>Enhanced the package to seamlessly wrap over scikit-learn, thereby simplifying key data science tasks from preprocessing to model training and tuning</li>
+      
+        <li>Incorporated MLflow into the package for robust artifact management, allowing for the tracking of model versions, data inputs, and predictions</li>
+      
+        <li>Created customer segmentation models and proposed optimal resource allocation based on customer responsiveness to different marketing channels</li>
+      
+        <li>Investigated adaptations to data science methodology for country/product specificities for maximum reusability. Delivered as many as ten different use cases as lead data scientist for different products and countries</li>
+      
+        <li>Supported data engineers in the creation of features using pyspark and validated ingested data using data visualization methods and discussions with subject matter experts</li>
+      
+    </ul>
+  </div>
+
+  <div class="cv-entry">
+    <h3 class="project-title">
+      
+        Scientific influencer (KOLs) identification, ranking and profiling using network analytics and Neo4j
+      
+    </h3>
+    
+      <div class="table-without-border">
+        <div class="table-row">
+          
             <div class="table-cell">
               <p>Data scientist/Product owner, Drug Development, Commercial, Medical affairs, UCB</p>
             </div>
+          
+          
             <div class="table-cell">
               <p>2018‑2019</p>
             </div>
-          </div>
+          
         </div>
-        <ul class="project-details">
-          <li>Created custom Neo4j databases by ingesting additional data sources to quantify influence. Delivered
-            tailored KOL ranking/profiling reports and presentations to meet stakeholder requirements.</li>
-          <li>Made network visualizations using networkx, Cytoscape and performed custom analysis.</li>
-          <li>Support improvements in the intake of customer requests to reduce time to deliver reports from days to
-            hours.
-          </li>
-        </ul>
       </div>
-      <div class="cv-entry">
-        <h3 class="project-title">Developed an automated forecasting workflow of claims data from US healthcare system
-        </h3>
-        <div class="table-without-border">
-          <div class="table-row">
+    
+    <ul class="project-details">
+      
+        <li>Created custom Neo4j databases by ingesting additional data sources to quantify influence. Delivered tailored KOL ranking/profiling reports and presentations to meet stakeholder requirements</li>
+      
+        <li>Made network visualizations using networkx, Cytoscape and performed custom analysis</li>
+      
+        <li>Supported improvements in the intake of customer requests to reduce time to deliver reports from days to hours</li>
+      
+    </ul>
+  </div>
+
+  <div class="cv-entry">
+    <h3 class="project-title">
+      
+        Developed an automated forecasting workflow of claims data from US healthcare system
+      
+    </h3>
+    
+      <div class="table-without-border">
+        <div class="table-row">
+          
             <div class="table-cell">
               <p>Lead Data Scientist, US Finance and claims, UCB</p>
             </div>
+          
+          
             <div class="table-cell">
               <p>2017‑2018</p>
             </div>
-          </div>
+          
         </div>
-        <ul class="project-details">
-          <li>Created modular R packages to extend the functionality of Facebook's prophet package with an end to end
-            workflow for ingesting, forecasting and reporting to analyze forecasting results
-          </li>
-          <li>Achieved forecasting accuracy of <strong>> 90% </strong>across the different use cases</li>
-          <li>Prototyped different time series forecasting methods to flexibly model multiple time series models and
-            performed hyperparameter tuning and validation on a batch compute machine</li>
-          <li>Applied anomaly detection methods to account for outlying behavior in time series automatically</li>
-        </ul>
       </div>
-      <div class="cv-entry">
-        <h3 class="project-title">Hands‑on workshop to demystify Artificial intelligence and Machine Learning</h3>
-        <div class="table-without-border">
-          <div class="table-row">
+    
+    <ul class="project-details">
+      
+        <li>Created modular R packages to extend the functionality of Facebook's prophet package with an end to end workflow for ingesting, forecasting and reporting to analyze forecasting results</li>
+      
+        <li>Achieved forecasting accuracy of > 90% across the different use cases</li>
+      
+        <li>Prototyped different time series forecasting methods to flexibly model multiple time series models and performed hyperparameter tuning and validation on a batch compute machine</li>
+      
+        <li>Applied anomaly detection methods to account for outlying behavior in time series automatically</li>
+      
+    </ul>
+  </div>
+
+  <div class="cv-entry">
+    <h3 class="project-title">
+      
+        Hands‑on workshop to demystify Artificial intelligence and Machine Learning
+      
+    </h3>
+    
+      <div class="table-without-border">
+        <div class="table-row">
+          
             <div class="table-cell">
               <p>Data science instructor, IT departments US, EU, UCB</p>
             </div>
+          
+          
             <div class="table-cell">
               <p>May‑ June 2017</p>
             </div>
-          </div>
+          
         </div>
-        <ul class="project-details">
-          <li>Created a <strong>R shiny</strong> application to create an engaging way for participants to learn about
-            typical AI use cases</li>
-          <li>Delivered the workshop to over <strong>100 people</strong> in four different venues and received great
-            feedback on level of engagement</li>
-        </ul>
       </div>
-      <h2> Personal projects </h2>
-      <div class="cv-entry">
-        <h3 class="project-title">Web Scraper to Analyse Property Purchase and Rental Trends in Belgium</h3>
-        <div class="table-without-border">
-        </div>
-        <ul class="project-details">
-          <li>Developed <a href="https://github.com/roumail/immoweb-scraper" target="_blank">web scraper</a> using
-            Beautiful Soup to collect information such as apartment data such as price,
-            area, etc.</li>
-          <li>Implemented SQLite for data storage, using `pydantic` for data validation and `sqlalchemy` for database
-            interactions.</li>
-          <li>Encapsulated the concerns into a python package with dependency management using Poetry.</li>
-          <li>Utilized Prefect for task scheduling, ensuring monitoring of data collection.</li>
-        </ul>
-      </div>
-      <div class="cv-entry">
-        <h3 class="project-title">Personal Portfolio and blogging website built using Hugo and hosted using Github Pages
-        </h3>
-        <div class="table-without-border">
-        </div>
-        <ul class="project-details">
-          <li>Created <a href="https://github.com/roumail/roumail.github.io" target="_blank">website</a> using `Hugo`
-            and implemented features such as a contact form, and visitor commenting
-            capabilities.</li>
-          <li>Hosted the static website on GitHub Pages and automated the deployment process using GitHub Actions.</li>
-        </ul>
-      </div>
-    </div>
+    
+    <ul class="project-details">
+      
+        <li>Created a R shiny application to create an engaging way for participants to learn about typical AI use cases</li>
+      
+        <li>Delivered the workshop to over 100 people in four different venues and received great feedback on level of engagement</li>
+      
+    </ul>
   </div>
-</body>
 
+        
+        
+            
+<h2>Personal Projects</h2>
+
+  <div class="cv-entry">
+    <h3 class="project-title">
+      
+        <a href="https://github.com/roumail/immoweb-scraper" target="_blank">Web Scraper to analyse Property Purchase and Rental Trends in Belgium</a>
+      
+    </h3>
+    
+    <ul class="project-details">
+      
+        <li>Developed web scraper using Beautiful Soup to collect information such as apartment data such as price, area, etc.</li>
+      
+        <li>Implemented SQLite for data storage, using `pydantic` for data validation and `SQLalchemy` for database interactions.</li>
+      
+        <li>Encapsulated the concerns into a python package with dependency management using Poetry.</li>
+      
+        <li>Utilized Prefect for task scheduling, ensuring monitoring of data collection.</li>
+      
+    </ul>
+  </div>
+
+  <div class="cv-entry">
+    <h3 class="project-title">
+      
+        <a href="https://github.com/roumail/roumail.github.io" target="_blank">Personal Portfolio and blogging website built using Hugo and hosted using Github Pages</a>
+      
+    </h3>
+    
+    <ul class="project-details">
+      
+        <li>Created website using `Hugo` and implemented features such as a contact form, and visitor commenting capabilities.</li>
+      
+        <li>Hosted the static website on GitHub Pages and automated the deployment process using GitHub Actions.</li>
+      
+    </ul>
+  </div>
+
+        
+    </div>
+</body>
 </html>
