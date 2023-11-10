@@ -368,7 +368,7 @@ td {
   <div class="cv-entry">
     <h3 class="project-title">
       
-        Configurable Bioinformatics Pipeline for Event-Triggered Secondary Analysis of Sequencing Data Using Python and Docker
+        Multi-Layered Python Solution for Bioinformatics Pipeline Management and Automation
       
     </h3>
     
@@ -389,15 +389,17 @@ td {
     
     <ul class="project-details">
       
-        <li>Developed a configurable multi-stage pipeline for secondary analysis, implemented in Python and deployed as a Docker entrypoint.</li>
+        <li>Implemented a Python service to routinely monitor new sequencing data, tracking progress using an SQLite database.</li>
       
-        <li>Designed and implemented an event-driven system that actively monitored for new sequencing data, triggering corresponding analyses upon detection of state changes, thereby ensuring timely and efficient processing of data.</li>
+        <li>Developed a multi-layered Python package: one layer encapsulated a data processing component, packaged within a <strong>Docker</strong> runtime environment, for handling bioinformatics pipeline outputs.</li>
       
-        <li>Implemented unit testing using pytest and implemented fail-safe mechanisms for robust error handling.</li>
+        <li>Created a separate entry point within the package responsible for initiating and managing the Docker-packaged data processing component, as well as other routine operations such as downloading completed analyses, updating analyses statuses, etc</li>
       
-        <li>Optimized pipeline performance by implementing an SQLite database for tracking previously launched analyses, enabling the pipeline to function as a daemon with persistent memory.</li>
+        <li>Implemented comprehensive systems integration, utilizing a combination of CLI tools and API calls for effective coordination and automation across various software components.</li>
       
-        <li>Provided guidance on automation strategies, leveraging CLI tools and API calls to enhance interoperability between Illumina platforms ICA and Basespace.</li>
+        <li>Applied Object-Oriented Programming (OOP) techniques to organize API, database interactions and endpoint processing.</li>
+      
+        <li>Implemented unit testing using <strong>pytest</strong> and implemented fail-safe mechanisms for robust error handling.</li>
       
     </ul>
   </div>
@@ -503,7 +505,7 @@ td {
       
         <li>Developed a Python package that abstracts the complexities of the data science workflow, enabling configurable deployments across diverse scenarios such as different countries and disease areas</li>
       
-        <li>Enhanced the package to seamlessly wrap over scikit-learn, thereby simplifying key data science tasks from preprocessing to model training and tuning</li>
+        <li>Enhanced the package to seamlessly wrap over <strong>scikit-learn</strong>, thereby simplifying key data science tasks from preprocessing to model training and tuning</li>
       
         <li>Incorporated MLflow into the package for robust artifact management, allowing for the tracking of model versions, data inputs, and predictions</li>
       
@@ -511,7 +513,7 @@ td {
       
         <li>Investigated adaptations to data science methodology for country/product specificities for maximum reusability. Delivered as many as ten different use cases as lead data scientist for different products and countries</li>
       
-        <li>Supported data engineers in the creation of features using pyspark and validated ingested data using data visualization methods and discussions with subject matter experts</li>
+        <li>Supported data engineers in the creation of features using <strong>PySpark</strong> and validated ingested data using data visualization methods and discussions with subject-matter experts</li>
       
     </ul>
   </div>
@@ -540,9 +542,11 @@ td {
     
     <ul class="project-details">
       
-        <li>Created custom Neo4j databases by ingesting additional data sources to quantify influence. Delivered tailored KOL ranking/profiling reports and presentations to meet stakeholder requirements</li>
+        <li>Developed custom <strong>Neo4j</strong> databases integrating diverse data sources for KOL influence analysis, enhancing data-driven decision-making.</li>
       
-        <li>Made network visualizations using networkx, Cytoscape and performed custom analysis</li>
+        <li>Utilized <strong>py2neo</strong> within <strong>Jupyter Notebooks</strong> for interactive data manipulation and network visualizations, employing tools like </strong>NetworkX</strong> and <strong>Cytoscape</strong> for insightful analysis.</li>
+      
+        <li>Interacted with the Graph database via <strong>Cypher</strong> queries in  the web UI as well as via the CLI for data extraction, exploration and reporting.</li>
       
         <li>Supported improvements in the intake of customer requests to reduce time to deliver reports from days to hours</li>
       
@@ -552,7 +556,7 @@ td {
   <div class="cv-entry">
     <h3 class="project-title">
       
-        Developed an automated forecasting workflow of claims data from US healthcare system
+        Developed an Automated Forecasting Workflow of Claims Data from US Healthcare System
       
     </h3>
     
@@ -573,13 +577,15 @@ td {
     
     <ul class="project-details">
       
-        <li>Created modular R packages to extend the functionality of Facebook's prophet package with an end to end workflow for ingesting, forecasting and reporting to analyze forecasting results</li>
+        <li>Engineered specialized <strong>R packages</strong> focusing on separate concerns: data engineering for preprocessing, a wrapper over Facebook's Prophet for advanced forecasting, and automated reporting for performance analysis.</li>
       
-        <li>Achieved forecasting accuracy of > 90% across the different use cases</li>
+        <li>Designed and implemented a comprehensive end-to-end workflow for ingesting healthcare claims data, performing time-series forecasting, and generating insightful reports on forecasting accuracy.</li>
       
-        <li>Prototyped different time series forecasting methods to flexibly model multiple time series models and performed hyperparameter tuning and validation on a batch compute machine</li>
+        <li>Achieved over 90% forecasting accuracy across various use cases by meticulously tuning models and integrating bespoke anomaly detection algorithms for time series data.</li>
       
-        <li>Applied anomaly detection methods to account for outlying behavior in time series automatically</li>
+        <li>Conducted extensive hyperparameter tuning and model validation using <strong>high-performance computing</strong> to optimize forecasting models effectively.</li>
+      
+        <li>Automated report generation using <strong>R Markdown</strong>, providing clear, concise insights into forecasting performance and model accuracy.</li>
       
     </ul>
   </div>
@@ -631,7 +637,7 @@ td {
       
         <li>Developed web scraper using Beautiful Soup to collect information such as apartment data such as price, area, etc.</li>
       
-        <li>Implemented SQLite for data storage, using `pydantic` for data validation and `SQLalchemy` for database interactions.</li>
+        <li>Implemented SQLite for data storage, using <strong>`pydantic`</strong> for data validation and <strong>`SQLalchemy`</strong> for database interactions.</li>
       
         <li>Encapsulated the concerns into a python package with dependency management using Poetry.</li>
       
@@ -654,6 +660,58 @@ td {
         <li>Hosted the static website on GitHub Pages and automated the deployment process using GitHub Actions.</li>
       
         <li>Codebase hosted on <a href='https://github.com/roumail/roumail.github.io' target='_blank'>github</a></li>
+      
+    </ul>
+  </div>
+
+  <div class="cv-entry">
+    <h3 class="project-title">
+      
+        <a href="https://github.com/roumail/resume" target="_blank">Automated Resume Builder and Continuous Deployment System with GitHub Pages Hosting</a>
+      
+    </h3>
+    
+    <ul class="project-details">
+      
+        <li>Engineered an automated system for generating, versioning, and hosting a dynamic CV using Markdown, HTML, Jinja templating and CSS.</li>
+      
+        <li>Set up a trio of GitHub repositories to separately manage the CV's content, styling, and public hosting on Github Pages.</li>
+      
+        <li>Developed a Python package for automating the styling and generation of the CV, integrating with Markdown and HTML/CSS.</li>
+      
+        <li>Implemented version control for CV content using a private GitHub repository, ensuring secure and organized data management.</li>
+      
+        <li>Leveraged GitHub Actions for automating the CV's generation and deployment process, enabling updates through git pushes.</li>
+      
+        <li>Hosted the final CV on GitHub Pages, providing a live, online version that can be easily updated</li>
+      
+    </ul>
+  </div>
+
+  <div class="cv-entry">
+    <h3 class="project-title">
+      
+        <a href="https://github.com/roumail/powerplant-coding-challenge" target="_blank">Unit Commitment Solver for Power Grid Optimization via FastAPI</a>
+      
+    </h3>
+    
+    <ul class="project-details">
+      
+        <li>Developed a REST API using <strong>FastAPI</strong> for optimizing energy distribution among powerplants based on load requirements and fuel costs.</li>
+      
+        <li>Implemented multiple algorithms to solve the <strong>unit-commitment problem</strong>, considering factors like fuel cost, powerplant efficiency, and environmental constraints.</li>
+      
+        <li>Utilized <strong>Pydantic</strong> for data validation and schema definition, ensuring data integrity and streamlined request handling.</li>
+      
+        <li>Deployed the API service using <strong>Uvicorn</strong>, an ASGI server, to ensure high performance and concurrent request handling.</li>
+      
+        <li>Packaged and containerized the application using <strong>Docker</strong>, with detailed documentation and a Dockerfile for easy deployment and scalability.</li>
+      
+        <li>Employed <strong>pytest</strong>, along with Python best practices such as typing and linting..</li>
+      
+        <li>Managed project dependencies using <strong>Poetry</strong>, facilitating efficient workflow and package management.</li>
+      
+        <li>Integrated <strong>Swagger UI</strong> for interactive API documentation and testing, accessible via http://localhost:8888/docs.</li>
       
     </ul>
   </div>
