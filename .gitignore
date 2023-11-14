@@ -1,7 +1,0 @@
-_site/
-.sass-cache/
-!data/closeup-Photo.jpeg
-*.pdf
-.DS_Store
-poetry.lock
-__pycache__
