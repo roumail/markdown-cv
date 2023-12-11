@@ -328,42 +328,7 @@ td {
   <div class="cv-entry">
     <h3 class="project-title">
       
-        Automated SQL Script Generation for Cross-Platform Data Migration in PostgreSQL
-      
-    </h3>
-    
-      <div class="table-without-border">
-        <div class="table-row">
-          
-            <div class="table-cell">
-              <p>Python Software Engineer, Illumina, Mechelen, Belgium</p>
-            </div>
-          
-          
-            <div class="table-cell">
-              <p>July-Aug 2023</p>
-            </div>
-          
-        </div>
-      </div>
-    
-    <ul class="project-details">
-      
-        <li>Designed and implemented an ORM Mapper for dynamic ingestion of various file formats, automating the SQL script generation process for data migration.</li>
-      
-        <li>Implemented the solution as a Python package encapsulating the entire data migration logic within a Docker entrypoint for portability and ease of deployment.</li>
-      
-        <li>Conducted comprehensive testing of generated SQL scripts using mock PostgreSQL database tables, ensuring script accuracy and reliability.</li>
-      
-        <li>Parameterized key inputs allowing for seamless deployment across multiple environments (Development, Integration, Production).</li>
-      
-    </ul>
-  </div>
-
-  <div class="cv-entry">
-    <h3 class="project-title">
-      
-        Multi-Layered Python Solution for Bioinformatics Pipeline Management and Automation
+        Multi-Layered Python Solution to Launch and Manage Pipelines for Customer-Uploaded Data, Enabling Automated Report Downloads
       
     </h3>
     
@@ -384,17 +349,54 @@ td {
     
     <ul class="project-details">
       
-        <li>Implemented a Python service to routinely monitor new sequencing data, tracking progress using an SQLite database.</li>
+        <li>Designed a Python service that automates the monitoring and processing of customer-uploaded sequencing data, initiating further analysis or report generation based on predefined criteria.</li>
       
-        <li>Developed a multi-layered Python package: one layer encapsulated a data processing component, packaged within a <strong>Docker</strong> runtime environment, for handling bioinformatics pipeline outputs.</li>
+        <li>Implemented a dual-layered approach: the first layer handles the initiation and tracking of analysis pipelines, while the second layer is registered as a <strong>Docker</strong> image in the analytics backend to perform post-processing on the output files and create comprehensive summary reports for the customer.</li>
       
-        <li>Created a separate entry point within the package responsible for initiating and managing the Docker-packaged data processing component, as well as other routine operations such as downloading completed analyses, updating analyses statuses, etc</li>
+        <li>Scheduled the Python service to operate every 30 minutes for new data and updates, ensuring seamless progression from data upload to final report delivery to customer environment.</li>
       
         <li>Implemented comprehensive systems integration, utilizing a combination of CLI tools and API calls for effective coordination and automation across various software components.</li>
       
-        <li>Applied Object-Oriented Programming (OOP) techniques to organize API, database interactions and endpoint processing.</li>
+        <li>Applied Object-Oriented Programming (OOP) principles to organize API, database interactions and endpoint processing to reduce code duplication and utilize self-documenting object names.</li>
       
         <li>Implemented unit testing using <strong>pytest</strong> and implemented fail-safe mechanisms for robust error handling.</li>
+      
+    </ul>
+  </div>
+
+  <div class="cv-entry">
+    <h3 class="project-title">
+      
+        Automated SQL Script Generation to facilitate PostgreSQL Data Migration in multiple environments
+      
+    </h3>
+    
+      <div class="table-without-border">
+        <div class="table-row">
+          
+            <div class="table-cell">
+              <p>Python Software Engineer, Illumina, Mechelen, Belgium</p>
+            </div>
+          
+          
+            <div class="table-cell">
+              <p>July-Aug 2023</p>
+            </div>
+          
+        </div>
+      </div>
+    
+    <ul class="project-details">
+      
+        <li>Designed and implemented a data ingestion framework to parse and validate input files for generating and validating SQL update statements.</li>
+      
+        <li>Conducted comprehensive testing of generated SQL scripts using a mock of production database tables to test that SQL scripts run as expected.</li>
+      
+        <li>Utilized SQLAlchemy for database schema management, creating and populating mock tables in a test environment to ensure the integrity and functionality of SQL scripts.</li>
+      
+        <li>Implemented the solution as a Python package encapsulating the entire data migration logic within a Docker entrypoint for portability and ease of deployment.</li>
+      
+        <li>Leveraged <strong>Jinja2</strong> templating to generate dynamic, parameterized SQL scripts, enabling the script to adapt seamlessly across different deployment environments, such as Development, Integration, and Production.</li>
       
     </ul>
   </div>
