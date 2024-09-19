@@ -232,70 +232,35 @@ td {
     <tr class="competency-item">
       <td class="competency-key">Cloud Services:</td>
       <td class="competency-value">
-        AWS (S3, ECS, SageMaker Studio), Azure (Blob, Databricks, Pipelines)
-      </td>
-    </tr>
-  
-    <tr class="competency-item">
-      <td class="competency-key">Data Science/Machine Learning:</td>
-      <td class="competency-value">
-        PyTorch, Pandas, PyMC3, scikit-Learn, MLflow and standard stack
-      </td>
-    </tr>
-  
-    <tr class="competency-item">
-      <td class="competency-key">Data Engineering:</td>
-      <td class="competency-value">
-        Kedro, Prefect, PySpark
-      </td>
-    </tr>
-  
-    <tr class="competency-item">
-      <td class="competency-key">Development Environments:</td>
-      <td class="competency-value">
-        Pycharm, VScode, Rstudio, Jupyter Notebooks, Azure Databricks
-      </td>
-    </tr>
-  
-    <tr class="competency-item">
-      <td class="competency-key">Package Management:</td>
-      <td class="competency-value">
-        Conda, Mamba, Pip, Poetry for Python package and environment management
+        AWS (S3, EC2, ECS, Cloudwatch, SageMaker Studio), Azure (Blob, Databricks, Pipelines)
       </td>
     </tr>
   
     <tr class="competency-item">
       <td class="competency-key">CI/CD:</td>
       <td class="competency-value">
-        Git, GitHub Actions, Azure Pipelines, GitLab Pipelines, GitHub CLI
+        Git, GitHub Actions, Azure Pipelines, GitHub CLI, Docker, Docker compose
       </td>
     </tr>
   
     <tr class="competency-item">
-      <td class="competency-key">Containerization:</td>
+      <td class="competency-key">Databases:</td>
       <td class="competency-value">
-        DockerHub, Docker, Docker compose
+        PostgreSQL, Redis, SQLite3, Neo4j, SQLAlchemy, Alembic
       </td>
     </tr>
   
     <tr class="competency-item">
-      <td class="competency-key">Database Management:</td>
+      <td class="competency-key">Monitoring:</td>
       <td class="competency-value">
-        PostgreSQL, SQLite3, Neo4j, SQLAlchemy
+        Grafana, Sentry, Kibana
       </td>
     </tr>
   
     <tr class="competency-item">
-      <td class="competency-key">Technical Documentation:</td>
+      <td class="competency-key">Code quality tools:</td>
       <td class="competency-value">
-        Pandoc, Markdown, Sphinx for documentation; CSS, HTML for web development
-      </td>
-    </tr>
-  
-    <tr class="competency-item">
-      <td class="competency-key">Software Testing:</td>
-      <td class="competency-value">
-        Pytest for testing; Black, Pre-Commit, iSort, Flake8, Mypy for code quality
+        pytest, coverage, responses, factoryboy, faker, pre-commit, ruff
       </td>
     </tr>
   
@@ -309,7 +274,7 @@ td {
     
       <li>Mobility: Driving License available, flexible for hybrid setup in Belgium</li>
     
-      <li>Availability: Immediately</li>
+      <li>Availability: TBD</li>
     
       <li>Hobbies: Drumming and percussion instruments, Bouldering/Climbing, productivity, Squash, reading</li>
     
@@ -323,6 +288,10 @@ td {
         
         <h2>Job History</h2>
 <ul>
+  
+    <li>
+      <strong>Python Backend Engineer</strong> at Engie GEMS, Brussels, Belgium | <em>Jan 2024 - Present</em>
+    </li>
   
     <li>
       <strong>Python Software Engineer</strong> at Illumina, Mechelen, Belgium | <em>April 2023 - October 2023</em>
@@ -344,7 +313,7 @@ td {
   <div class="cv-entry">
     <h3 class="project-title">
       
-        <a href="https://svpino.gumroad.com/l/mlp" target="_blank">End-to-End Orchestration of AWS SageMaker for Production-Grade Machine Learning Pipeline Development</a>
+        Backend Engineering for Green Energy Trading Platform using Flask and Python Ecosystem
       
     </h3>
     
@@ -352,12 +321,12 @@ td {
         <div class="table-row">
           
             <div class="table-cell">
-              <p>AWS Sagemaker Bootcamp with Santiago Valdarrama (70k followers on Linkedin)</p>
+              <p>Python Backend Engineer, Engie Green energy Management solutions (GEMS), Brussels, Belgium</p>
             </div>
           
           
             <div class="table-cell">
-              <p>Nov 2023-Dec 2023</p>
+              <p>Jan 2024 - present</p>
             </div>
           
         </div>
@@ -365,19 +334,21 @@ td {
     
     <ul class="project-details">
       
-        <li>Deployment of complex machine learning pipelines in AWS SageMaker, including data processing, model training, hyperparameter tuning, and model registry management.</li>
+        <li>Supported European green energy trading processes by being first line support for incidents on supported applications.</li>
       
-        <li>Utilized TensorFlow Estimator for model training within SageMaker, leveraging container images and SageMaker Experiments for enhanced tracking and logging of training processes.</li>
+        <li>Diagnosed and resolved issues with Okta token management, troubleshooting client credentials flow for integrating with an external system.</li>
       
-        <li>Incorporated robust model evaluation using SageMaker's Processing and Condition Steps, ensuring models are registered in the SageMaker Model Registry only upon meeting predefined accuracy benchmarks.</li>
+        <li>Enhanced resilience of a scheduled <strong>celery</strong> task making an API call by incorporating retry mechanism. Extended our internal mock for testing celery task execution to support testing that tasks are appropriately retried by monkeypatching celery internals.</li>
       
-        <li>Deployed models to SageMaker Endpoints from the Model Registry, integrating inference pipelines for efficient handling of pre- and post-processing tasks.</li>
+        <li>Led the migration of two codebases from <strong>SQLAlchemy</strong> v1 to v2. Updated the contributing guidelines to include preferred querying syntax by conferring with the development team.</li>
       
-        <li>Implemented an automated deployment system using Amazon EventBridge and AWS Lambda, enabling dynamic model deployment upon meeting set approval criteria.</li>
+        <li>Ensure full coverage of challenging features involving celery tasks triggered via SQLAlchemy after commit flush events, where test assertions changed depending on system time.</li>
       
-        <li>Established Amazon SageMaker Model Monitor schedules to ensure continual assessment and maintenance of model performance via data and model quality checks.</li>
+        <li>Resolved a bug where a PR failing the test running step could still be merged into the main branch by adding additional checks within the pipeline and reducing code duplication by using reusable workflows when running with matrix strategy.</li>
       
-        <li>Explored and planned transition of machine learning pipeline from Keras with TensorFlow backend to PyTorch, utilizing the new Keras 3 API.</li>
+        <li>Implement new endpoints for system integration between different services and diagnose issues using a mixture of <strong>Kibana</strong>, <strong>Sentry</strong> and issue reproduction using review environments.</li>
+      
+        <li>Designed and implemented via github actions an end to end integration system involving a database, a message queue, multiple external services that could be run in a scheduled manner. </li>
       
     </ul>
   </div>
@@ -385,7 +356,7 @@ td {
   <div class="cv-entry">
     <h3 class="project-title">
       
-        Multi-Layered Python Solution to Launch and Manage Pipelines for Customer-Uploaded Data, Enabling Automated Report Downloads
+        Python solution enabling launching, pipeline management and automated report downloads for Customer-Uploaded Data
       
     </h3>
     
@@ -620,7 +591,7 @@ td {
       
         <li>Encapsulated the concerns into a python package with dependency management using Poetry.</li>
       
-        <li>Employed <strong>Prefect</strong> for  job orchestration, managing the workflow's scheduling and monitoring of scraping tasks.</li>
+        <li>Employed <strong>Prefect</strong> for job orchestration, managing the workflow's scheduling and monitoring of scraping tasks.</li>
       
     </ul>
   </div>
