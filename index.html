@@ -334,21 +334,19 @@ td {
     
     <ul class="project-details">
       
-        <li>Supported European green energy trading processes by being first line support for incidents on supported applications.</li>
+        <li>Support processes for trading wind and solar assets on the European electricity market, as well as manage contract lifecycle as a first line support for incidents and feature requests in a team of developers.</li>
       
-        <li>Diagnosed and resolved issues with Okta token management, troubleshooting client credentials flow for integrating with an external system.</li>
+        <li>Diagnose incidents using a combination of <strong>Kibana</strong>, <strong>Sentry</strong>, and full coverage of features by testing client workflows instead of unit testing and mocking objects.</li>
+      
+        <li>Implement endpoints to integrate different services, modularizing legacy code to improve maintainability and reliability.</li>
       
         <li>Enhanced resilience of a scheduled <strong>celery</strong> task making an API call by incorporating retry mechanism. Extended our internal mock for testing celery task execution to support testing that tasks are appropriately retried by monkeypatching celery internals.</li>
       
         <li>Led the migration of two codebases from <strong>SQLAlchemy</strong> v1 to v2. Updated the contributing guidelines to include preferred querying syntax by conferring with the development team.</li>
       
-        <li>Ensure full coverage of challenging features involving celery tasks triggered via SQLAlchemy after commit flush events, where test assertions changed depending on system time.</li>
+        <li>Setup a scheduled github actions based workflow for integration testing between two services, a database and message queue dependency.</li>
       
-        <li>Resolved a bug where a PR failing the test running step could still be merged into the main branch by adding additional checks within the pipeline and reducing code duplication by using reusable workflows when running with matrix strategy.</li>
-      
-        <li>Implement new endpoints for system integration between different services and diagnose issues using a mixture of <strong>Kibana</strong>, <strong>Sentry</strong> and issue reproduction using review environments.</li>
-      
-        <li>Designed and implemented via github actions an end to end integration system involving a database, a message queue, multiple external services that could be run in a scheduled manner. </li>
+        <li>Increased reliability and modularity of CI/CD pipeline in github actions to prevent pull requests being merged into the main branch if they failed certain steps.</li>
       
     </ul>
   </div>
@@ -549,25 +547,19 @@ td {
     
     <ul class="project-details">
       
-        <li>Utilized demographic data to develop customer segmentation models, identifying key segments for high-potential growth and revenue.</li>
-      
-        <li>Integrated multi-channel marketing data, gaining a comprehensive understanding of customer interactions to inform the development of an effective market mix model.</li>
-      
-        <li>Leveraged the market mix model to investigate the relationship between customer segments and marketing channel responsiveness, pinpointing segments with the highest engagement potential.</li>
-      
-        <li>Aligned the insights from the market mix model with promotional strategies, targeting specific customer segments through their most responsive channels.</li>
+        <li>Developed customer segmentation models, identifying key segments for high-potential growth and revenue by integrating multiple data sources to gain a comprehensive understanding of customer interactions and investigate the relationship between customer segments and marketing channel responsiveness.</li>
       
         <li>Optimized marketing resource allocation based on the model’s insights, tailoring marketing strategies to enhance customer engagement and maximize ROI across diverse channels.</li>
+      
+        <li>Performed feature engineering using <strong>PySpark</strong> and validated ingested data using data visualization methods and discussions with subject-matter experts.</li>
       
         <li>Adapted data science methodologies to address country and product specificities, delivering tailored solutions for up to ten different use cases across various products and countries.</li>
       
         <li>Developed a Python package with <strong>Cookiecutter</strong> templates that abstract the complexities of the data science workflow, enabling configurable deployments across diverse scenarios such as different countries and disease areas.</li>
       
-        <li>Enhanced the package to seamlessly wrap over <strong>scikit-learn</strong>, thereby simplifying key data science tasks from preprocessing to model training and tuning</li>
+        <li>Enhanced the package to seamlessly wrap over <strong>scikit-learn</strong>, thereby simplifying key data science tasks from preprocessing to model training and tuning.</li>
       
-        <li>Incorporated <strong>MLflow</strong> into the package for robust artifact management, allowing for the tracking of model versions, data inputs, and predictions</li>
-      
-        <li>Performed feature engineering using <strong>PySpark</strong> and validated ingested data using data visualization methods and discussions with subject-matter experts</li>
+        <li>Incorporated <strong>MLflow</strong> into the package for robust artifact management, allowing for the tracking of model versions, data inputs, and predictions.</li>
       
     </ul>
   </div>
